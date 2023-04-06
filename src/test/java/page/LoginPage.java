@@ -2,6 +2,7 @@ package page;
 
 import com.codeborne.selenide.SelenideElement;
 
+import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$x;
 
@@ -18,7 +19,7 @@ public class LoginPage {
      }
 
      public void checkText(String expectedText) {
-         loginPageText.should(text(expectedText));
+         loginPageText.shouldBe(exactText(expectedText));
      }
 
 }

@@ -9,7 +9,7 @@ import tests.TestBase;
 public class LoginTest extends TestBase {
     String login = "standard_user";
     String password = "secret_sauce";
-    String expectedText = "Accepted usernames are";
+    String expectedText = "Accepted usernames are:";
     LoginPage loginPage;
     CatalogPage catalogPage;
 
