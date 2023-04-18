@@ -1,18 +1,14 @@
 package page;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import lombok.Getter;
 
 import static com.codeborne.selenide.Selenide.$x;
-
-public class CatalogPage {
+@Getter
+public class CatalogPage extends CommonPage {
     private SelenideElement cartIcon = $x("//a[@class='shopping_cart_link']");
 
-    public void shouldBeVisible() {
-        cartIcon.shouldBe(Condition.visible);
-    }
-
-    public boolean isCartIconExist() {
-        return cartIcon.isDisplayed();
-    }
+//    public SelenideElement getCartIcon() {
+//        return cartIcon;
+//    }
 }
