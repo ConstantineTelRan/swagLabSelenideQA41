@@ -18,8 +18,4 @@ public class LoginPage {
          loginButton.click();
      }
 
-     public void checkText(String expectedText) {
-         loginPageText.shouldBe(exactText(expectedText));
-     }
-
 }
