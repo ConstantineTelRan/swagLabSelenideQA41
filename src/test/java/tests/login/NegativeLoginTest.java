@@ -11,9 +11,9 @@ public class NegativeLoginTest extends TestBase {
     Steps002 steps002;
     Steps003 steps003;
 
-    @Test
+    @Test(description = "Authorization with not valid password")
     @Description("Authorization with not valid password")
-    @Link("https://docs.google.com/document/d/17tn1kNkyNwj_WF3q0J794AiFZxiu44eSThdMqtoDs5g/edit#bookmark=id.td1pe8tc3a8m")
+    @Link("https://www.tabnine.com/code/java/methods/io.qameta.allure.Allure/link")
     @Link(name = "002 Authorization with not valid password")
     public void authWithWrongPwd002Test() {
         steps002 = new Steps002();
