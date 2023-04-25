@@ -14,17 +14,14 @@ public class Steps004 extends CommonSteps {
     CatalogPage catalogPage;
     Card card;
     ProductPage productPage;
-    LoginPage loginPage;
-    String login = "standard_user";
-    String password = "secret_sauce";
+
     String cardTitle;
     String cardDesc;
     String cardPrice;
 
     @Step("Log in to the app")
     public void precondition() {
-        loginPage = new LoginPage();
-        loginPage.login(login, password);
+        getLogin();
     }
 
     @Step("In the product catalog click on the title of the product")
