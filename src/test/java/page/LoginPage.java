@@ -12,6 +12,7 @@ public class LoginPage {
      private SelenideElement loginButton = $x("//input[@id=\"login-button\"]");
      private SelenideElement loginPageText = $x("//div[@id=\"login_credentials\"]//h4");
 
+
      public void login(String login, String password) {
          loginInput.sendKeys(login);
          passwordInput.sendKeys(password);
