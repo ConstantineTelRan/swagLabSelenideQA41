@@ -39,24 +39,4 @@ public class CatalogPage {
         }
         return copy.equals(list);
     }
-
-    /*
-    * список с текстом заголовков, которые мы получили с помощью метода getTitles, после применения фильтра (titles)
-    * делаем копию списка titles (copy)
-    * сортируем список copy
-    * проверяем, что списки titles и copy одинаковые
-    *
-    * a = [3, 2, 1]
-    * b = [3, 2, 1].sort
-    * b = [1, 2, 3]
-    * if a == b
-    * isSorting(titles, "ASC")
-    * */
-
-
-
-
-
-
-
 }
