@@ -2,13 +2,13 @@ package page;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import com.google.common.collect.Ordering;
 import enums.Sorting;
 import lombok.Getter;
 
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
-import java.util.stream.Stream;
 
 import static com.codeborne.selenide.Selenide.$$x;
 import static com.codeborne.selenide.Selenide.$x;
@@ -43,6 +43,7 @@ public class CatalogPage {
         if(sorting == ASC) {
             Collections.sort(copy);
         } else if (sorting == DESC) {
+            Collections.sort(copy);
             Collections.reverse(copy);
         }
         return copy.equals(list);
@@ -59,6 +60,20 @@ public class CatalogPage {
         List<Double> digPrice =DoubleStream.of(dbl).boxed().collect(Collectors.toList());
         return digPrice;
     }
+
+
+    public boolean isPriceSortable(List<Double> list, Sorting sorting) {
+        List<Double> copy = new ArrayList<>(list);
+        Collections.sort(copy);
+        if(sorting == ASC) {
+            Collections.sort(copy);
+        } else if (sorting == DESC) {
+            Collections.sort(copy);
+            Collections.reverse(copy);
+        }
+        return copy.equals(list);
+    }
+
 
 
 
