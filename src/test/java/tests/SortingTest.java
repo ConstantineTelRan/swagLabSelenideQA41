@@ -16,8 +16,8 @@ public class SortingTest extends TestBase {
     @Test
     public void sortingTest() {
         steps005.step1();
-        steps005.step2();
-        steps005.step2();
+//        steps005.step2();
+        steps005.step4();
     }
 
 }

@@ -1,16 +1,14 @@
 package tests.product.steps;
 
-import com.codeborne.selenide.Condition;
+import com.google.common.collect.Ordering;
 import enums.Sorting;
 import org.testng.Assert;
 import page.CatalogPage;
-import page.LoginPage;
 import tests.CommonSteps;
 
 import java.util.List;
 
-import static enums.SortingValue.NAME_ASC;
-import static enums.SortingValue.NAME_DESC;
+import static enums.SortingValue.*;
 
 public class Steps005 extends CommonSteps {
     CatalogPage catalogPage;
@@ -43,6 +41,12 @@ public class Steps005 extends CommonSteps {
     }
 
 
+    public void step4() {
+        catalogPage.getSort().selectOption(PRICE_DESC.getValue());
+        pricesDesc = catalogPage.getPrices();
+        boolean sorted = Ordering.natural().reverse().isOrdered(pricesDesc);
+        Assert.assertTrue(catalogPage.isPriceSortable(pricesDesc, Sorting.DESC));
+    }
 
 
 
