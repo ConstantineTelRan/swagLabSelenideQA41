@@ -14,7 +14,7 @@ public class ProductTest extends TestBase {
         steps004.precondition();
     }
 
-    @Test
+    @Test(description = "Compare product information on the product card with the information on the product page")
     public void productTest() {
         steps004.step1();
         steps004.step2();

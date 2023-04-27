@@ -9,7 +9,7 @@ import tests.login.steps.Steps001;
 public class PositiveAuthTest extends TestBase {
     Steps001 steps001;
 
-    @Test
+    @Test(description = "Authorization with not valid password")
     @Description("Authorization with valid data")
     @Link("https://docs.google.com/document/d/17tn1kNkyNwj_WF3q0J794AiFZxiu44eSThdMqtoDs5g/edit#bookmark=id.wbvt605q3ync")
     @Link(name = "001 Authorization with valid data")

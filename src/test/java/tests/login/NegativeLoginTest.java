@@ -21,7 +21,7 @@ public class NegativeLoginTest extends TestBase {
         steps002.step2();
     }
 
-    @Test
+    @Test(description = "Authorization with not valid login")
     @Description("Authorization with not valid login")
     @Link("https://docs.google.com/document/d/17tn1kNkyNwj_WF3q0J794AiFZxiu44eSThdMqtoDs5g/edit#bookmark=id.nx5jybuism3t")
     public void authWithWrongLogin003Test() {
