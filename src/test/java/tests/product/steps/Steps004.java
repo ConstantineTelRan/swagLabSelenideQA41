@@ -4,11 +4,8 @@ import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;
 import page.Card;
 import page.CatalogPage;
-import page.LoginPage;
 import page.ProductPage;
 import tests.CommonSteps;
-
-import javax.xml.catalog.Catalog;
 
 public class Steps004 extends CommonSteps {
     CatalogPage catalogPage;
