@@ -22,4 +22,6 @@ public class CommonSteps {
         $x("//div[@class=\"error-message-container error\"]")
                 .shouldBe(Condition.exactText(text));
     }
+
+
 }

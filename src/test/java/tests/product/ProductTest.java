@@ -4,7 +4,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import tests.TestBase;
 import tests.product.steps.Steps004;
-
 public class ProductTest extends TestBase {
     Steps004 steps004;
 

@@ -13,7 +13,7 @@ public class Steps001 extends CommonSteps {
     LoginPage loginPage;
     CatalogPage catalogPage;
 
-    @Step("Log in using valid data")
+    @Step("Log in using valid data login")
     public void step1() {
         loginPage = new LoginPage();
         loginPage.login(login, password);

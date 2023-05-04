@@ -6,6 +6,6 @@ import lombok.Getter;
 import static com.codeborne.selenide.Selenide.$$x;
 
 @Getter
-public class BasePage {
+public abstract class BasePage extends Menu {
     private ElementsCollection socialLinks = $$x("//ul[@class='social']//a");
 }
