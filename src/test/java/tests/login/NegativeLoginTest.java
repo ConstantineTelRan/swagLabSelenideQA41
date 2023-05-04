@@ -1,7 +1,6 @@
 package tests.login;
 
-import io.qameta.allure.Description;
-import io.qameta.allure.Link;
+import io.qameta.allure.*;
 import org.testng.annotations.Test;
 import tests.TestBase;
 import tests.login.steps.Steps002;
@@ -11,6 +10,8 @@ public class NegativeLoginTest extends TestBase {
     Steps002 steps002;
     Steps003 steps003;
 
+    @Epic("Login tests")
+    @Feature("Negative login test")
     @Test(description = "Authorization with not valid password")
     @Description("Authorization with not valid password")
     @Link("https://www.tabnine.com/code/java/methods/io.qameta.allure.Allure/link")
@@ -21,6 +22,8 @@ public class NegativeLoginTest extends TestBase {
         steps002.step2();
     }
 
+    @Epic("Login tests")
+    @Feature("Negative login test")
     @Test(description = "Authorization with not valid login")
     @Description("Authorization with not valid login")
     @Link("https://docs.google.com/document/d/17tn1kNkyNwj_WF3q0J794AiFZxiu44eSThdMqtoDs5g/edit#bookmark=id.nx5jybuism3t")

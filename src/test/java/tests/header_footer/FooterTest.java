@@ -1,5 +1,7 @@
 package tests.header_footer;
 
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import tests.TestBase;
@@ -14,6 +16,8 @@ public class FooterTest extends TestBase {
         steps007.getLogin();
     }
 
+    @Epic("Base page tests")
+    @Feature("Footer tests")
     @Test
     public void footerSocialLinkTest() {
         steps007.step1();
