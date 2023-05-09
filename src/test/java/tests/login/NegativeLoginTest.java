@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import tests.TestBase;
 import tests.login.steps.Steps002;
 import tests.login.steps.Steps003;
+import utility.RunTestAgain;
 
 public class NegativeLoginTest extends TestBase {
     Steps002 steps002;
@@ -12,7 +13,7 @@ public class NegativeLoginTest extends TestBase {
 
     @Epic("Login tests")
     @Feature("Negative login test")
-    @Test(description = "Authorization with not valid password")
+    @Test(description = "Authorization with not valid password", retryAnalyzer = RunTestAgain.class)
     @Description("Authorization with not valid password")
     @Link("https://www.tabnine.com/code/java/methods/io.qameta.allure.Allure/link")
     @Link(name = "002 Authorization with not valid password")
