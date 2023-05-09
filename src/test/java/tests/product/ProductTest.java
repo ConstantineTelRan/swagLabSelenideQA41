@@ -6,6 +6,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import tests.TestBase;
 import tests.product.steps.Steps004;
+import utility.RunTestAgain;
+
 public class ProductTest extends TestBase {
     Steps004 steps004;
 
@@ -15,7 +17,8 @@ public class ProductTest extends TestBase {
         steps004.precondition();
     }
     @Epic("Product tests")
-    @Test(description = "Compare product information on the product card with the information on the product page")
+    @Test(description = "Compare product information on the product card with the information on the product page",
+            retryAnalyzer = RunTestAgain.class)
     public void productTest() {
         steps004.step1();
         steps004.step2();

@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import tests.TestBase;
 import tests.product.steps.Steps005;
 import tests.product.steps.Steps006;
+import utility.RunTestAgain;
 
 public class SortingTest extends TestBase {
     Steps005 steps005;
@@ -31,7 +32,7 @@ public class SortingTest extends TestBase {
     @Epic("Product tests")
     @Feature("Catalog page")
     @Story("Sorting of product")
-    @Test(description = "Sort products by price")
+    @Test(description = "Sort products by price", retryAnalyzer = RunTestAgain.class)
     public void priceSortingTest() {
         steps006 = new Steps006();
         steps006.step1();

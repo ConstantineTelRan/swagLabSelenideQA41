@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import tests.TestBase;
 import tests.header_footer.steps.Steps007;
+import utility.RunTestAgain;
 
 public class FooterTest extends TestBase {
     Steps007 steps007;
@@ -18,7 +19,7 @@ public class FooterTest extends TestBase {
 
     @Epic("Base page tests")
     @Feature("Footer tests")
-    @Test
+    @Test(description = "Check social media links", retryAnalyzer = RunTestAgain.class)
     public void footerSocialLinkTest() {
         steps007.step1();
         steps007.step2();
